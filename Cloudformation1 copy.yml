@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Create EC2 Instance
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0ff21806645c5e492
+      # 自分のEC2のImageIdを記述
+      InstanceType: t2.micro
